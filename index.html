@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script defer src="js/main.js"></script>
+    <style>
+        body {
+            background: rgb(39, 39, 39);
+        }
+
+        .position {
+            width: 4rem;
+            height: 4rem;
+            background: rgb(45, 177, 177);
+        }
+
+        #turn-indicator {
+            width: 4rem;
+            height: 4rem;
+            background: rgb(45, 177, 177);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid p-5">
+        <p class="display-6 text-light">tic tac toe:</p>
+        <div class="playground">
+            <div>
+                <button class="position js-position" id="0" type="button"><img class="img-fluid" src="img/placeholder.png" alt="."></button>
+                <button class="position js-position" id="1" type="button"><img class="img-fluid" src="img/placeholder.png" alt="."></button>
+                <button class="position js-position" id="2" type="button"><img class="img-fluid" src="img/placeholder.png" alt="."></button>
+            </div>
+            <div>
+                <button class="position js-position" id="3" type="button"><img class="img-fluid" src="img/placeholder.png" alt="."></button>
+                <button class="position js-position" id="4" type="button"><img class="img-fluid" src="img/placeholder.png" alt="."></button>
+                <button class="position js-position" id="5" type="button"><img class="img-fluid" src="img/placeholder.png" alt="."></button>
+            </div>
+            <div>
+                <button class="position js-position" id="6" type="button"><img class="img-fluid" src="img/placeholder.png" alt="."></button>
+                <button class="position js-position" id="7" type="button"><img class="img-fluid" src="img/placeholder.png" alt="."></button>
+                <button class="position js-position" id="8" type="button"><img class="img-fluid" src="img/placeholder.png" alt="."></button>
+            </div>
+        </div>
+        <p class="display-6 text-light">
+            <span id="win-text">current turn:</span>
+            <button class="float-right d-inline" id="turn-indicator" type="button"><img class="img-fluid" src="img/X.png" alt="❌"></button>
+        </p>
+        
+    </div>
+</body>
+
+</html>
